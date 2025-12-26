@@ -2,79 +2,69 @@
 
 using namespace std;
 
-void taskb();
+void task_a()
+{
+
+    float pi = 3.14;
+
+    float h;
+
+    cout << "Enter your value for h:";
+
+    cin >> h;
+
+    float r;
+
+    cout << "Enter your value for r:";
+
+    cin >> r;
+
+    cout << 2 * pi * r * (h + r) << "cm" << endl;
+}
+
+void task_b()
+{
+
+    int deci;
+
+    cout << "Enter your decimal value :";
+
+    cin >> deci;
+
+    string result = "";
+
+    if (deci == 0)
+    {
+
+        cout << "Binary value is :0";
+    }
+    else if (deci > 0)
+    {
+
+        for (int i = deci; i > 0; i = i / 2)
+        {
+
+            if (i % 2 != 0)
+            {
+
+                result = "1" + result;
+            }
+            else if (i % 2 == 0)
+            {
+
+                result = "0" + result;
+            }
+        }
+    }
+
+    cout << result << endl;
+}
 
 int main()
 {
 
-    taska();
+    /* code */
 
-    taskb();
-
+    task_b();
     return 0;
-}
-
-// task a
-
-
-void taska(){
-
-    float pi=3.14;
-
-
-    float r;
-
-
-    cout<<"Enter your radius :";
-
-    cin>>r;
-
-    float h;
-
-
-    cout<<"Enter your height :";
-
-    cin>>h;
-
-
-    cout<<"Area of cylinder is :"<<2*pi*r*(h+r)<<"cm^2"<<endl;
-
-
-}
-
-// task b
-
-
-void taskb(){
-
-
-
-    string result="";
-
-
-    int num;
-
-    cout<<"Enter your decmial number :";
-
-    cin>>num;
-
-    for (int i=num; i>0; i=i/2){
-
-
-        if (i%2==0){
-
-
-            result="0"+result;
-        }else if (i%2!=0){
-
-
-            result="1"+result;
-        }
-
-    }
-
-    cout<<result<<endl;
-
-
-
 }

@@ -188,15 +188,15 @@ int main()
 
     ans=sum(arr,s);
 
-    cout<<"Sum is :"<<sum<<endl;
+    cout<<"Sum is :"<<ans<<endl;
 
     break;
 
     case 'a':
 
     ans=average(arr,s);
-
-    cout<<"Average is :"<<average<<endl;
+    
+    cout<<"Average is :"<<ans<<endl;
 
     break;
 
