@@ -1,2 +1,0 @@
-Unsorted array :[31 32764 553915074 ]Unsorted array :[31 21 553915074 ]Unsorted array :[31 21 21 ]
-Sorted array :[31 21 21 ]
