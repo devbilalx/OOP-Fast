@@ -4,45 +4,40 @@ using namespace std;
 
 int main()
 {
+    /* code */
 
     int x;
 
     x=25;
 
-    cout<< "address of x is : "<<&x<<endl;
-    cout<< "valur of x is   : "<<x<<endl;
 
     int *p;
+
     p=&x;
-  
-    cout<< "address of p is : "<<p<<endl;
 
-    cout<<"value this address store is : "<<*p<<endl;
+    cout<<p;
 
+    cout<<endl;
+
+    cout<<*p<<endl;
 
     int a[]={1,2,3};
 
+    int *s;
 
-    int *c; //pointer
+    s=&a[0];
 
-    c=&a[0];
+    cout<<endl;
+    cout<<*s<<endl;
 
-    cout<<c<<endl;
+    cout<<s;
 
-    cout<<*c<<endl;// will follow the address and written value sotre there
-
-
-    cout<<a<<endl;  // will give same address as intial as a=&a[0]
-
-    // c++;
-
-    cout<<*c<<endl;
 
     for (int i=0; i<3; i++){
-        cout<<*c<<endl;
-        c++;
+
+        cout<<*s;
+        s=s+1;
     }
- 
 
     return 0;
 }
